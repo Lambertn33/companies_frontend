@@ -1,4 +1,3 @@
-import './App.css';
 import Companies from './components/companies/Companies';
 
 function App() {
