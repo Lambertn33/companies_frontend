@@ -4,6 +4,7 @@ import Company from './Company';
 import Navbar from '../Navbar';
 import * as companiesService from '../services/companiesServices';
 import styles from './companies.css';
+import Search from './Search';
 
 export default function Companies() {
   const [companies, setCompanies] = useState([]);
@@ -18,6 +19,9 @@ export default function Companies() {
       <div className="container">
         <div className="row">
           <h2 className='title'>Available Companies in the System</h2>
+        </div>
+        <div className="row">
+          <Search />
         </div>
         <div className="row">
            {
